@@ -11,7 +11,7 @@ const Homepage = () => {
       <div className='spaceX__homepage-header'>
         <div className='spaceX__homepage-header-hero'>
           <div className='spaceX__homepage-header__intro'>
-            <h1>WELCOME TO SPACE-X</h1>
+            <h1>WELCOME TO SpaceX</h1>
           </div>
         </div>
         <div className='spaceX__homepage-header__quote'>

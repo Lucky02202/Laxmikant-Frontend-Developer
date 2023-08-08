@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom'
 const Capsules = () => {
 
   let [capsuleData, setCapsuleData] = useState([])
-  let [singleCapsuleData, setSingleCapsuleData] = useState()
 
   let navigate = useNavigate()
 
@@ -39,7 +38,7 @@ const Capsules = () => {
           {
             capsuleData.map((capsule, index) => {
               return (
-                <article className='spaceX__capsule-card' key={index}>
+                <article className='spaceX__capsule-card' key={capsule.capsule_serial}>
                   <div className='spaceX__capsule-card-header'>
                     <div className='spaceX__capsule-card-header__serial'>
                       <h1>{capsule.capsule_serial}</h1>
@@ -55,10 +54,8 @@ const Capsules = () => {
                       <p><b>Type</b> : {capsule.type}</p>
                     </div>
                     <div className='spaceX__capsule-card-footer__right'>
-                      <div className='spaceX__capsule-card-footer__right-button' onClick={() => {
-                        setSingleCapsuleData(capsule)
-                        navigate("/capsulse/viewcapsule")
-                        console.log(singleCapsuleData);
+                      <div className='spaceX__capsule-card-footer__right-button' onClick={() =>{
+                        navigate(`/capsulse/viewcapsule/${capsule.capsule_serial}`)
                       }}>
                         Learn More
                       </div>
