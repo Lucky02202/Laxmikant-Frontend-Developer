@@ -12,7 +12,7 @@
 }
 
 .spaceX__navbar-logo svg{
-  width: 10rem;
+  width: 15rem;
   fill: white;
   position: relative;
   z-index: 1;
@@ -22,7 +22,7 @@
 .spaceX__navbar-options{
   flex: 1;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: white;
   font-size: 1.2rem;
 }
@@ -30,6 +30,10 @@
 a{
   color: white;
   text-decoration: none;
+}
+
+a:hover{
+  color: rgb(205, 204, 204);
 }
 
 /* Menu */
@@ -58,8 +62,8 @@ a{
   .spaceX__navbar{
     min-height: 4rem;
   }
-  svg{
-    width: 5rem;
+  .spaceX__navbar-logo svg{
+    width: 10rem;
   }
   .spaceX__navbar-options{
     display: none;

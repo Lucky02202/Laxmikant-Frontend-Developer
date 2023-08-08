@@ -1,10 +1,9 @@
 .spaceX__homepage{
     background-color: rgb(31, 31, 31);
-    height: 89vh;
 }
 
-.spaceX__homepage-header{
-  height: 100%;
+.spaceX__homepage-header-hero{
+  height: 89vh;
   background-image: url('../../media/Star6_8_DSC_6243_desktop_fab8367da5.jpg');
   background-size: cover;
   background-position: center;
