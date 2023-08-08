@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import './Capsules.css'
 import axiosInstance from '../../helper/axiosInstance'
+import { useNavigate } from 'react-router-dom'
 
 
 const Capsules = () => {
 
   let [capsuleData, setCapsuleData] = useState([])
+  let [singleCapsuleData, setSingleCapsuleData] = useState()
+
+  let navigate = useNavigate()
 
   useEffect(() => {
     let fetchdata = async () => {
@@ -13,7 +17,6 @@ const Capsules = () => {
       setCapsuleData(data)
     }
     fetchdata()
-    // console.log(capsuleData);
   }, [])
 
   return (
@@ -30,7 +33,7 @@ const Capsules = () => {
       </header>
       <section className='spaceX__capsule-cardgrid'>
         <div className='spaceX__capsule-cardgrid__heading'>
-          <h1>Checkout Some Of Our Capsules</h1>
+          <h1>Know more about Our Capsules</h1>
         </div>
         <div className='spaceX__capsule-cardgrid__cards'>
           {
@@ -52,8 +55,12 @@ const Capsules = () => {
                       <p><b>Type</b> : {capsule.type}</p>
                     </div>
                     <div className='spaceX__capsule-card-footer__right'>
-                      <div className='spaceX__capsule-card-footer__right-button'>
-                          Learn More
+                      <div className='spaceX__capsule-card-footer__right-button' onClick={() => {
+                        setSingleCapsuleData(capsule)
+                        navigate("/capsulse/viewcapsule")
+                        console.log(singleCapsuleData);
+                      }}>
+                        Learn More
                       </div>
                     </div>
                   </div>
