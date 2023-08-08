@@ -40,7 +40,7 @@
   background-position: center;
 }
 
-.spaceX__capsule-header{
+.spaceX__homepage__capsule-header{
   height: 100%;
   width: 40%;
   color: white;
@@ -51,7 +51,7 @@
   justify-content: center;
 }
 
-.spaceX__capsule-header h1{
+.spaceX__homepage__capsule-header h1{
   font-size: 2.5rem;
 }
 
@@ -87,7 +87,7 @@
     font-size: 3rem;
     font-weight: 500;
   }
-  .spaceX__capsule-header{
+  .spaceX__homepage__capsule-header{
     width: 50%;
   }
 }
@@ -100,7 +100,7 @@
   .spaceX__homepage-header__quote p{
     font-size: 0.9rem;
   }
-  .spaceX__capsule-header{
+  .spaceX__homepage__capsule-header{
     width: 60%;
   }
 }
@@ -113,7 +113,7 @@
   .spaceX__homepage-header__quote p{
     font-size: 0.8rem;
   }
-  .spaceX__capsule-header h1{
+  .spaceX__homepage__capsule-header h1{
     font-size: 1.5rem;
   }
   .spaceX__homepage-button{
@@ -134,14 +134,14 @@
     font-size: 0.7rem;
     padding: 1rem;
   }
-  .spaceX__capsule-header{
+  .spaceX__homepage__capsule-header{
     width: 70%;
     justify-content: flex-start;
   }
-  .spaceX__capsule-header h1{
+  .spaceX__homepage__capsule-header h1{
     font-size: 1.1rem;
   }
-  .spaceX__capsule-header p{
+  .spaceX__homepage__capsule-header p{
     font-size: 0.7rem;
   }
 }

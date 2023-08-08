@@ -13,7 +13,7 @@ const Rockets = () => {
     }
     fetchdata()
     console.log(rocketData);
-  },[])
+  })
 
   return (
     <div className='spaceX__rocket'>

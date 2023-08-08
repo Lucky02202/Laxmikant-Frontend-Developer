@@ -17,18 +17,53 @@ const Capsules = () => {
   }, [])
 
   return (
-    <div className='spaceX__capsule'>
-      {
-        capsuleData.map((capsule) => {
-          return (
-            <div>
-              <p>{capsule.capsule_serial}</p>
-              <img src={} alt=""  height={"300px"} width={"400px"} />
-            </div>
-          )
-        })
-      }
-    </div>
+    <main className='spaceX__capsule'>
+      <header className='spaceX__capsule-header'>
+        <section className='spaceX__capsule-header-heading'>
+          <h1>
+            <div></div>
+            CAPSULE
+            <div></div>
+          </h1>
+          <p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond.</p>
+        </section>
+      </header>
+      <section className='spaceX__capsule-cardgrid'>
+        <div className='spaceX__capsule-cardgrid__heading'>
+          <h1>Checkout Some Of Our Capsules</h1>
+        </div>
+        <div className='spaceX__capsule-cardgrid__cards'>
+          {
+            capsuleData.map((capsule, index) => {
+              return (
+                <article className='spaceX__capsule-card' key={index}>
+                  <div className='spaceX__capsule-card-header'>
+                    <div className='spaceX__capsule-card-header__serial'>
+                      <h1>{capsule.capsule_serial}</h1>
+                    </div>
+                    <div className='spaceX__capsule-card-header__status'>
+                      <b>STATUS</b>
+                      <p>{capsule.status}</p>
+                    </div>
+                  </div>
+                  <div className='spaceX__capsule-card-footer'>
+                    <div className='spaceX__capsule-card-footer__left'>
+                      <p><b>Mission Count</b> : {capsule.missions.length}</p>
+                      <p><b>Type</b> : {capsule.type}</p>
+                    </div>
+                    <div className='spaceX__capsule-card-footer__right'>
+                      <div className='spaceX__capsule-card-footer__right-button'>
+                          Learn More
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              )
+            })
+          }
+        </div>
+      </section>
+    </main>
   )
 }
 
