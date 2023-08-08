@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import axiosInstance from '../../../helper/axiosInstance'
 
 const ViewCapsule = ({data}) => {
-  
+
   let {id} = useParams()
   let [capsule , setCapsule] = useState([])
   let navigate = useNavigate()
@@ -17,7 +17,7 @@ const ViewCapsule = ({data}) => {
       setCapsule(data)
     };
     fetchdata();
-  },[])
+  }, [id])
 
   return (
     <main className='spaceX__viewcapsule'>
