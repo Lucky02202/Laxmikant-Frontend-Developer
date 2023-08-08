@@ -49,11 +49,12 @@ a:hover{
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(14,6,4);
   position: absolute;
   right: 0;
   top:4rem ;
   gap: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Media queries */
@@ -72,5 +73,45 @@ a:hover{
     flex: 1;
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+
+/* animations */
+.scale-in-tr {
+	-webkit-animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes scale-in-tr {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-tr {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
   }
 }

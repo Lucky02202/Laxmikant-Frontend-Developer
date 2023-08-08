@@ -61,7 +61,7 @@ const Navbar = () => {
         }
         {
           menu && (
-            <div className='menu'>
+            <div className='menu scale-in-tr'>
               <Link to={'/'}>HOME</Link>
               <Options />
             </div>
