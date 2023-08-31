@@ -14,11 +14,11 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Homepage />} />
+        <Route path='Laxmikant-Frontend-Developer/' element={<Homepage />} />
         <Route path='/capsules' element={<Capsules />} />
         <Route path='/rockets' element={<Rockets />} />
         <Route path='/dragons' element={<Dragons />} />
-        <Route path='/capsulse/viewcapsule/:id' element={<ViewCapsule/>}/>
+        <Route path='/capsulse/viewcapsule/:id' element={<ViewCapsule />} />
       </Routes>
       <Footer />
     </Router>
