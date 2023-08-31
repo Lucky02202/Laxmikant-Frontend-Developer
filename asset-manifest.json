@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Laxmikant-Frontend-Developer/static/css/main.700a257c.css",
+    "main.js": "/Laxmikant-Frontend-Developer/static/js/main.8de708a7.js",
+    "static/media/Dragon.jpg": "/Laxmikant-Frontend-Developer/static/media/Dragon.093e90c8a7a13a21a3f5.jpg",
+    "static/media/dragon.jpeg": "/Laxmikant-Frontend-Developer/static/media/dragon.a17f1b79da2a039ee637.jpeg",
+    "static/media/rocket.jpg": "/Laxmikant-Frontend-Developer/static/media/rocket.c70568f29bf9f3ce159a.jpg",
+    "static/media/rocketBackground.jpeg": "/Laxmikant-Frontend-Developer/static/media/rocketBackground.124744619838cf9332b8.jpeg",
+    "static/media/dragon1.jpg": "/Laxmikant-Frontend-Developer/static/media/dragon1.3b3a13d430c5ada910a2.jpg",
+    "static/media/Star6_8_DSC_6243_desktop_fab8367da5.jpg": "/Laxmikant-Frontend-Developer/static/media/Star6_8_DSC_6243_desktop_fab8367da5.c61b0c5715d1f6d03038.jpg",
+    "static/media/dragonComponent.jpeg": "/Laxmikant-Frontend-Developer/static/media/dragonComponent.422c653b00956794d949.jpeg",
+    "static/media/dragon2.jpg": "/Laxmikant-Frontend-Developer/static/media/dragon2.53184dc71ff24ea04883.jpg",
+    "static/media/rocketComponent.jpeg": "/Laxmikant-Frontend-Developer/static/media/rocketComponent.fbd9386cb80102889f40.jpeg",
+    "static/media/viewCapsule.jpg": "/Laxmikant-Frontend-Developer/static/media/viewCapsule.52bd53097df5b0ff1fc6.jpg",
+    "index.html": "/Laxmikant-Frontend-Developer/index.html",
+    "main.700a257c.css.map": "/Laxmikant-Frontend-Developer/static/css/main.700a257c.css.map",
+    "main.8de708a7.js.map": "/Laxmikant-Frontend-Developer/static/js/main.8de708a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.700a257c.css",
+    "static/js/main.8de708a7.js"
+  ]
+}
